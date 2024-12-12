@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Varstar</title>
+    <link rel="icon" href="varstar-favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <h1>Varstar</h1>
+    <h2 class="french">Une conception web qui brille</h2>
+    <h2 class="english">Web design that shines</h2>
+    <button id="frenchBtn">Français</button>
+    <button id="englishBtn">English</button>
+    <p class="french">
+      Varstar est une entreprise de conception web qui se spécialise dans la
+      création de sites web pour les petites entreprises. Nous offrons des
+      services de conception web, de développement web et de référencement web.
+    </p>
+    <p class="english">
+      Varstar is a web design company that specialises in creating websites for
+      small businesses. We offer web design, web development, and web
+      optimisation services.
+    </p>
+    <script>
+      document
+        .getElementById("frenchBtn")
+        .addEventListener("click", function () {
+          document.querySelectorAll(".french").forEach(function (element) {
+            element.style.display = "block";
+          });
+          document.querySelectorAll(".english").forEach(function (element) {
+            element.style.display = "none";
+          });
+        });
+
+      document
+        .getElementById("englishBtn")
+        .addEventListener("click", function () {
+          document.querySelectorAll(".french").forEach(function (element) {
+            element.style.display = "none";
+          });
+          document.querySelectorAll(".english").forEach(function (element) {
+            element.style.display = "block";
+          });
+        });
+    </script>
+  </body>
+</html>
