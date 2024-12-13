@@ -1,3 +1,160 @@
+/* CSS Variables */
+
+:root {
+  --font-heading: "Roboto", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+  --text-color-light: #dbd8e3;
+  --text-color-dark: #352f44;
+  --background-color-light: #5c5470;
+  --background-color-dark: #680747;
+  --feature-color-light: #f70776;
+  --feature-color-dark: #c3195d;
+  --box-shadow-light: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --box-shadow-heavy: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+/* Global Styles */
+
+html,
+body,
+p {
+  margin: 0;
+}
+
+p {
+  color: var(--text-color-light);
+  text-align: center;
+}
+
+section {
+  padding: 20px;
+}
+
 .english {
   display: none;
+}
+
+/* Header Styles */
+
+header {
+  background-image: url(./images/navy-star-sky.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1,
+h2 {
+  color: var(--text-color-light);
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 48px;
+  padding-top: 30px;
+}
+
+h2 {
+  margin: 0;
+  padding: 30px 0;
+}
+
+.lang-btn-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+/* Button Styles */
+
+.btn-standard {
+  border-radius: 10px;
+  margin: 0 20px;
+  padding: 5px 10px;
+}
+
+.btn-standard:hover {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+}
+
+.btn-color {
+  background-color: var(--feature-color-dark);
+  border: 2px solid var(--feature-color-dark);
+  color: var(--text-color-light);
+  width: 150px;
+  margin: 0 auto 15px auto;
+}
+
+.btn-color:hover {
+  background-color: var(--feature-color-light);
+  border: 2px solid var(--feature-color-light);
+}
+
+/* Intro Section Styles */
+
+.intro {
+  background-color: var(--background-color-dark);
+}
+
+.nav-btn-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 0 0 0;
+}
+
+/* About Section Styles */
+
+.about {
+  background-image: url(./images/cutout-stars.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+}
+
+.about-text {
+  background-color: var(--text-color-light);
+  border-radius: 10px;
+  color: var(--text-color-dark);
+  margin: 20px auto 10px auto;
+  padding: 10px;
+  width: 80%;
+}
+
+.contact-btn {
+  display: block;
+  margin: 20px auto 0 auto;
+}
+
+/* Services Section Styles */
+
+.services {
+  background-color: var(--background-color-light);
+}
+
+/* Testimonials Section Styles */
+
+.testimonials {
+  background-color: var(--background-color-dark);
+}
+
+/* Contact Section Styles */
+
+.contact {
+  background-color: var(--background-color-light);
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: var(--feature-color-dark);
 }
