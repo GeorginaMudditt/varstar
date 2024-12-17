@@ -1,8 +1,8 @@
 /* CSS Variables */
 
 :root {
-  --font-heading: "Roboto", sans-serif;
-  --font-body: "Open Sans", sans-serif;
+  --font-heading: "Rubik", sans-serif; /* <weight> value from 300 to 900 */
+  --font-body: "Roboto Mono", monospace; /* <weight> value from 100 to 700 */
   --text-color-light: #dbd8e3;
   --text-color-dark: #352f44;
   --background-color-light: #5c5470;
@@ -24,6 +24,7 @@ p {
 
 p {
   color: var(--text-color-light);
+  font-family: var(--font-body);
   text-align: center;
 }
 
@@ -33,6 +34,32 @@ section {
 
 .english {
   display: none;
+}
+
+/* Navbar Styles */
+
+.navbar {
+  background-color: var(--feature-color-dark);
+  font-family: var(--font-body);
+}
+
+.navbar-brand {
+  font-family: var(--font-heading);
+}
+
+.navbar-brand:hover {
+  color: var(--text-color-dark);
+}
+
+.navbar a {
+  color: var(--text-color-light);
+  font-size: 20px;
+  margin: 0 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: var(--text-color-dark);
 }
 
 /* Header Styles */
@@ -52,12 +79,15 @@ h2 {
 
 h1 {
   margin: 0;
-  font-size: 48px;
-  padding-top: 30px;
+  font-size: 60px;
+  font-family: var(--font-heading);
+  padding-top: 100px;
 }
 
 h2 {
-  margin: 0;
+  font-size: 30px;
+  font-family: var(--font-body);
+  margin: 0 10px;
   padding: 30px 0;
 }
 
@@ -71,6 +101,7 @@ h2 {
 
 .btn-standard {
   border-radius: 10px;
+  font-family: var(--font-body);
   margin: 0 20px;
   padding: 5px 10px;
 }
@@ -99,12 +130,6 @@ h2 {
   background-color: var(--background-color-dark);
 }
 
-.nav-btn-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 20px 0 0 0;
-}
-
 /* About Section Styles */
 
 .about {
@@ -127,7 +152,7 @@ h2 {
   color: var(--text-color-dark);
   margin: 20px auto 10px auto;
   padding: 10px;
-  width: 80%;
+  width: 90%;
 }
 
 .contact-btn {
@@ -157,4 +182,10 @@ h2 {
 
 footer {
   background-color: var(--feature-color-dark);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px 0;
+  position: absolute;
+  width: 100%;
 }
