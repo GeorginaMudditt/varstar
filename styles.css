@@ -124,6 +124,10 @@ h2 {
   border: 2px solid var(--feature-color-light);
 }
 
+button.english {
+  display: none;
+}
+
 /* Intro Section Styles */
 
 .intro {
