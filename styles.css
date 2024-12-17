@@ -48,6 +48,12 @@ a {
   font-family: var(--font-body);
 }
 
+.navbar-nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
 .navbar-brand {
   font-family: var(--font-heading);
 }
