@@ -5,8 +5,8 @@
   --font-body: "Roboto Mono", monospace; /* <weight> value from 100 to 700 */
   --text-color-light: #dbd8e3;
   --text-color-dark: #352f44;
-  --background-color-dark: #0C2028;
-  --background-color-light: #1D323C; 
+  --background-color-dark: #0c2028;
+  --background-color-light: #1d323c;
   --feature-color-light: #927fbf;
   --feature-color-dark: #4f3b78;
   --box-shadow-light: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -137,7 +137,6 @@ h2 {
 .btn-color:hover {
   background-color: var(--feature-color-light);
   border: 2px solid var(--feature-color-light);
-  
 }
 
 button.english {
@@ -210,7 +209,7 @@ button.english {
 }
 
 .card-text {
-  color: var(--background-color-light)
+  color: var(--background-color-light);
   font-family: var(--font-body);
 }
 
@@ -222,7 +221,6 @@ button.english {
   height: 250px;
   object-fit: cover;
 }
-
 
 /* Contact Section Styles */
 
