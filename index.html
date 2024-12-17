@@ -53,39 +53,44 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="french nav-link" href="#">Bonjour</a>
-                <a class="english nav-link" href="#">Hello</a>
-                <a class="nav-link" href="#">Services</a>
-                <a class="french nav-link" href="#">Témoignages</a>
-                <a class="english nav-link" href="#">Testimonials</a>
-                <a class="nav-link" href="#">Contact</a>
+                <a class="french nav-link" href="#about-section">Bonjour</a>
+                <a class="english nav-link" href="#about-section">Hello</a>
+                <a class="nav-link" href="#services-section">Services</a>
+                <a class="french nav-link" href="#testimonials-section"
+                  >Témoignages</a
+                >
+                <a class="english nav-link" href="#testimonials-section"
+                  >Testimonials</a
+                >
+                <a class="nav-link" href="#contact-section">Contact</a>
               </div>
             </div>
           </div>
         </nav>
       </div>
       <h1>Varstar</h1>
-      <h2 class="french">Une conception web qui brille</h2>
-      <h2 class="english">Web design that shines</h2>
+      <h2 class="french h2-intro">Une conception web qui brille</h2>
+      <h2 class="english h2-intro">Web design that shines</h2>
       <div class="lang-btn-container">
         <button id="frenchBtn" class="btn-standard">Français 🇫🇷</button>
         <button id="englishBtn" class="btn-standard">English 🇬🇧</button>
       </div>
-    </header>
-    <section class="intro">
+      <div class="intro-text-container">
       <p class="french">
         Varstar est une entreprise de conception web qui se spécialise dans la
-        création de sites web pour les petites entreprises. Nous offrons des
+        création de sites web pour les petites entreprises. <br /><br />Nous offrons des
         services de conception web, de développement web et de référencement
         web.
       </p>
       <p class="english">
         Varstar is a web design company that specialises in creating websites
-        for small businesses. We offer web design, web development, and web
+        for small businesses. <br /><br />We offer web design, web development, and web
         optimisation services.
       </p>
-    </section>
+    </div>
+    </header>
     <section class="about">
+      <a id="about-section"></a>
       <h2 class="greeting french">Bonjour 👋</h2>
       <h2 class="greeting english">Hello 👋</h2>
       <img
@@ -94,19 +99,19 @@
         alt="Georgina profile picture"
       />
       <p class="french about-text">
-        Je m’appelle Georgina et je suis développeuse front-end. Originaire
-        d’Angleterre, j'habite maintenant à Carcès, dans la région du Var en
-        France, avec ma famille. J’aime tellement cette région que j’ai décidé
-        de l’inclure dans le nom de mon entreprise ! <br /><br />Je suis là pour
-        aider votre petite entreprise à gagner en visibilité grâce à un site web
-        captivant, attrayant et entièrement responsive. J’offre un service
-        personnalisé à des prix très compétitifs. <br /><br />Je serais ravie de
-        vous entendre si vous avez besoin d’un site web pour votre entreprise et
-        souhaitez discuter de votre projet.
+        Je m’appelle Georgina Mudditt et je suis développeuse front-end.
+        Originaire d’Angleterre, j'habite maintenant à Carcès, dans la région du
+        Var en France, avec ma famille. J’aime tellement cette région que j’ai
+        décidé de l’inclure dans le nom de mon entreprise ! <br /><br />Je suis
+        là pour aider votre petite entreprise à gagner en visibilité grâce à un
+        site web captivant, attrayant et entièrement responsive. J’offre un
+        service personnalisé à des prix très compétitifs. <br /><br />Je serais
+        ravie de vous entendre si vous avez besoin d’un site web pour votre
+        entreprise et souhaitez discuter de votre projet.
       </p>
       <p class="english about-text">
-        My name is Georgina and I am a front-end developer. Originally from
-        England, I now live in Carcès in the Var region of France with my
+        My name is Georgina Mudditt and I am a front-end developer. Originally
+        from England, I now live in Carcès in the Var region of France with my
         family. I love this region so much that I decided to include it in my
         company's name! <br /><br />I am here to help your small business get
         more attention with an engaging, attractive and fully responsive
@@ -115,15 +120,16 @@
         and would like to discuss the project.
       </p>
       <button class="french btn-standard btn-color contact-btn">
-        Contactez-moi
+        <a href="mailto:hello@georgina-mudditt.com"> Contactez-moi</a>
       </button>
       <button class="english btn-standard btn-color contact-btn">
-        Contact me
+        <a href="mailto:hello@georgina-mudditt.com"> Contact me</a>
       </button>
     </section>
 
     <section class="services">
-      <h2>Services</h2>
+      <a id="services-section"></a>
+      <h2 class="services-heading">Services</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo inventore
         nesciunt quae eos eius! Culpa, eveniet modi minima nostrum asperiores
@@ -131,29 +137,76 @@
       </p>
     </section>
     <section class="testimonials">
-      <h2 class="french">Témoignages</h2>
-      <h2 class="english">Testimonials</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam ipsa,
-        voluptate facilis reiciendis voluptas blanditiis possimus quae officiis
-        laudantium corrupti dicta vero atque perferendis? Quos nesciunt commodi
-        perferendis minima vitae?
-      </p>
+      <a id="testimonials-section"></a>
+      <h2 class="test-heading french">Témoignages</h2>
+      <h2 class="test-heading english">Testimonials</h2>
+      <div class="testimonials-container">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Courir à Carcès</h5>
+            <img class="card-img-top client-pic" src="./images/sylvie.jpg" alt="Card image cap">
+            <h5 class="card-title">Sylvie TRILLAUD</h5>
+            <p class="card-text">"Georgina est très professionnelle. Elle a su mettre en avant les atouts de notre association pour monter notre site web "Courir à Carcès". Le site est lisible, convivial et permet aux personnes intéressées de trouver toutes les informations nécessaires. Un grand merci à elle !"</p>
+            <button class="french btn-standard btn-color"><a href="#" target="_blank">Visitez le site</a></button>
+          </div>
+        </div>
     </section>
     <section class="contact">
-      <h2>Contact</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        voluptates, quod, quae, quos quibusdam dolorum quia voluptate
-        consequuntur doloremque quae, quos quibusdam dolorum quia voluptate
-        consequuntur doloremque.
+      <a id="contact-section"></a>
+      <h2 class="contact-heading">Contact</h2>
+      <h3>Georgina MUDDITT</h3>
+      <p class="french">
+        Merci de m’envoyer un e-mail si vous souhaitez discuter d’un projet de
+        site web. La première étape consistera à organiser une courte réunion
+        pour définir vos besoins et vous fournir un devis sans engagement. Cette
+        réunion peut se faire en ligne ou dans mon bureau à Carcès.
+      </p>
+      <p class="english">
+        Please send me an email if you would like to discuss a website project.
+        The first step will be to organise a short meeting to establish your
+        requirements and provide a no-obligation quote. This meeting can be
+        online or in my office in Carcès.
+      </p>
+      <button class="french btn-standard btn-color contact-btn">
+        <a href="mailto:hello@georgina-mudditt.com"> Envoyez-moi un e-mail</a>
+      </button>
+      <button class="english btn-standard btn-color contact-btn">
+        <a href="mailto:hello@georgina-mudditt.com"> Send me an email</a>
+      </button>
+      <iframe
+        class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2895.6136612402643!2d6.188006875547088!3d43.46866226434771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c944d490b8f193%3A0x57208ddfb75e8775!2sChemin%20Notre%20Dame%2C%2083570%20Carc%C3%A8s!5e0!3m2!1sen!2sfr!4v1734426121948!5m2!1sen!2sfr"
+        width="300"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <p class="french">
+        Vous pouvez en savoir plus sur moi et me contacter via mes réseaux
+        sociaux. Voir les liens ci-dessous dans le pied de page ⤵️
+      </p>
+      <p class="english">
+        You can find out more about me and also contact me via my social
+        networks. See links below in the footer ⤵️
       </p>
     </section>
     <footer>
-      <p>Facebook</p>
-      <p>LinkedIn</p>
-      <p>GitHub</p>
-      <p>Portfolio</p>
+      <a
+        href="https://www.facebook.com/profile.php?id=61570376353050"
+        target="_blank"
+        ><p>Facebook</p></a
+      >
+      <a href="https://www.linkedin.com/in/georgina-mudditt/" target="_blank"
+        ><p>LinkedIn</p></a
+      >
+      <a href="https://github.com/GeorginaMudditt" target="_blank"
+        ><p>GitHub</p></a
+      >
+      <a href="https://georgina-mudditt.com/" target="blank"
+        ><p>Portfolio</p></a
+      >
     </footer>
     <script>
       document

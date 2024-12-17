@@ -5,10 +5,10 @@
   --font-body: "Roboto Mono", monospace; /* <weight> value from 100 to 700 */
   --text-color-light: #dbd8e3;
   --text-color-dark: #352f44;
-  --background-color-light: #5c5470;
-  --background-color-dark: #680747;
-  --feature-color-light: #f70776;
-  --feature-color-dark: #c3195d;
+  --background-color-dark: #0C2028;
+  --background-color-light: #1D323C; 
+  --feature-color-light: #927fbf;
+  --feature-color-dark: #4f3b78;
   --box-shadow-light: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   --box-shadow-heavy: rgba(0, 0, 0, 0.19) 0px 10px 20px,
     rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -34,6 +34,11 @@ section {
 
 .english {
   display: none;
+}
+
+a {
+  color: var(--text-color-light);
+  text-decoration: none;
 }
 
 /* Navbar Styles */
@@ -65,14 +70,15 @@ section {
 /* Header Styles */
 
 header {
-  background-image: url(./images/navy-star-sky.jpg);
+  background-image: url(./images/grey-star-sky.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 h1,
-h2 {
+h2,
+h3 {
   color: var(--text-color-light);
   text-align: center;
 }
@@ -91,10 +97,18 @@ h2 {
   padding: 30px 0;
 }
 
+.h2-intro {
+  padding-top: 20px;
+}
+
 .lang-btn-container {
   display: flex;
   justify-content: center;
   padding-bottom: 30px;
+}
+
+.intro-text-container {
+  padding: 0 15px 80px 15px;
 }
 
 /* Button Styles */
@@ -102,7 +116,7 @@ h2 {
 .btn-standard {
   border-radius: 10px;
   font-family: var(--font-body);
-  margin: 0 20px;
+  margin: 50px;
   padding: 5px 10px;
 }
 
@@ -115,32 +129,30 @@ h2 {
   background-color: var(--feature-color-dark);
   border: 2px solid var(--feature-color-dark);
   color: var(--text-color-light);
-  width: 150px;
-  margin: 0 auto 15px auto;
+  padding: 10px 20px;
+  width: 180px;
+  margin: 30px auto;
 }
 
 .btn-color:hover {
   background-color: var(--feature-color-light);
   border: 2px solid var(--feature-color-light);
+  
 }
 
 button.english {
   display: none;
 }
 
-/* Intro Section Styles */
-
-.intro {
-  background-color: var(--background-color-dark);
-}
-
 /* About Section Styles */
 
+.greeting {
+  padding-top: 80px;
+}
+
 .about {
-  background-image: url(./images/cutout-stars.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: var(--background-color-dark);
+  background-image: url(./images/backgrounds/stardust.png);
 }
 
 .profile-pic {
@@ -152,6 +164,7 @@ button.english {
 
 .about-text {
   background-color: var(--text-color-light);
+  background-image: url(./images/backgrounds/45-degree-fabric-dark.png);
   border-radius: 10px;
   color: var(--text-color-dark);
   margin: 20px auto 10px auto;
@@ -161,25 +174,76 @@ button.english {
 
 .contact-btn {
   display: block;
-  margin: 20px auto 0 auto;
+  margin: 40px auto 20px auto;
 }
 
 /* Services Section Styles */
 
 .services {
   background-color: var(--background-color-light);
+  background-image: url(./images/backgrounds/stardust.png);
+}
+
+.services-heading {
+  padding-top: 80px;
 }
 
 /* Testimonials Section Styles */
 
 .testimonials {
   background-color: var(--background-color-dark);
+  background-image: url(./images/backgrounds/stardust.png);
 }
+
+.test-heading {
+  padding-top: 80px;
+}
+
+.card {
+  margin: 50px auto;
+}
+
+.card-body {
+  background-color: var(--text-color-light);
+  background-image: url(./images/backgrounds/45-degree-fabric-dark.png);
+  text-align: center;
+}
+
+.card-text {
+  color: var(--background-color-light)
+  font-family: var(--font-body);
+}
+
+.client-pic {
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
 
 /* Contact Section Styles */
 
 .contact {
   background-color: var(--background-color-light);
+  background-image: url(./images/backgrounds/stardust.png);
+}
+
+.contact-heading {
+  padding-top: 80px;
+}
+
+.map {
+  border-radius: 10px;
+  display: block;
+  margin: 40px auto;
+  width: 90%;
+}
+
+h3 {
+  padding-bottom: 20px;
 }
 
 /* Footer Styles */
