@@ -163,8 +163,18 @@ button.english {
 .profile-pic {
   border-radius: 50%;
   display: block;
-  margin: 0 auto;
+  margin: 10px auto 40px auto;
   width: 250px;
+  animation: profile-pic-spin 5s linear infinite;
+}
+
+@keyframes profile-pic-spin {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
 }
 
 .about-text {
@@ -193,10 +203,26 @@ button.english {
   padding-top: 80px;
 }
 
+.star-icon {
+  display: block;
+  margin: 20px auto;
+}
+
+/* Pricing Section Styles */
+
+.pricing {
+  background-color: var(--background-color-dark);
+  background-image: url(./images/backgrounds/stardust.png);
+}
+
+.pricing-heading {
+  padding-top: 80px;
+}
+
 /* Testimonials Section Styles */
 
 .testimonials {
-  background-color: var(--background-color-dark);
+  background-color: var(--background-color-light);
   background-image: url(./images/backgrounds/stardust.png);
 }
 
@@ -237,6 +263,12 @@ button.english {
 
 .contact-heading {
   padding-top: 80px;
+}
+
+.undraw {
+  display: block;
+  margin: 30px auto;
+  width: 250px;
 }
 
 .map {
