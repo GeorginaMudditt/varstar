@@ -117,6 +117,13 @@ h2 {
   padding: 0 15px 80px 15px;
 }
 
+.special-offer {
+  background-color: #f70776;
+  border-radius: 10px;
+  margin: 50px 10px 0 10px;
+  padding: 10px;
+}
+
 /* Button Styles */
 
 .btn-standard {
@@ -215,8 +222,41 @@ button.english {
   background-image: url(./images/backgrounds/stardust.png);
 }
 
+.pricing h4 {
+  color: var(--text-color-light);
+  text-align: center;
+}
+
 .pricing-heading {
   padding-top: 80px;
+}
+
+.pricing-list {
+  background-color: var(--text-color-light);
+  background-image: url(./images/backgrounds/45-degree-fabric-dark.png);
+  border-radius: 10px;
+  margin: 50px auto;
+  padding: 0 10px 10px 20px;
+  font-family: var(--font-body);
+}
+
+.pricing-list h3 {
+  padding-top: 20px;
+}
+
+.pricing-left {
+  color: var(--text-color-dark);
+  text-align: left;
+}
+
+.fa-circle-check,
+.fa-square-plus {
+  margin-right: 10px;
+}
+
+.website-link {
+  color: var(--feature-color-dark);
+  text-decoration: underline;
 }
 
 /* Testimonials Section Styles */
@@ -257,7 +297,7 @@ button.english {
 /* Contact Section Styles */
 
 .contact {
-  background-color: var(--background-color-light);
+  background-color: var(--background-color-dark);
   background-image: url(./images/backgrounds/stardust.png);
 }
 
