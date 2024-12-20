@@ -341,3 +341,45 @@ footer {
   position: absolute;
   width: 100%;
 }
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 90px;
+  }
+  h2 {
+    font-size: 45px;
+  }
+  p {
+    font-size: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .btn-standard {
+    font-size: 30px;
+  }
+  .special-offer {
+    max-width: 700px;
+    margin: 50px auto 0 auto;
+  }
+  .card,
+  .map {
+    max-width: 700px;
+  }
+  .btn-color {
+    width: 280px;
+  }
+  .services-list {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  .pricing-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .pricing-list {
+    max-width: 700px;
+  }
+}
