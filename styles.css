@@ -380,6 +380,11 @@ footer {
     justify-content: space-around;
   }
   .pricing-list {
+    margin: 50px 20px 0 20px;
     max-width: 700px;
+  }
+
+  .offer-small {
+    margin: 0 20px;
   }
 }
