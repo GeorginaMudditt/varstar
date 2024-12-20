@@ -114,7 +114,7 @@ h2 {
 }
 
 .intro-text-container {
-  padding: 0 15px 80px 15px;
+  padding: 0 15px 40px 15px;
 }
 
 .special-offer {
@@ -122,6 +122,14 @@ h2 {
   border-radius: 10px;
   margin: 50px 10px 0 10px;
   padding: 10px;
+}
+
+.offer-title {
+  padding-bottom: 0;
+}
+
+.offer-small {
+  margin: 0 0 30px 0;
 }
 
 /* Button Styles */
