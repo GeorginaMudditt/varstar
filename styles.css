@@ -54,8 +54,9 @@ a {
   width: 100%;
 }
 
-.navbar-brand {
+.navbar .navbar-brand {
   font-family: var(--font-heading);
+  font-size: 30px;
 }
 
 .navbar-brand:hover {
@@ -346,7 +347,8 @@ footer {
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 90px;
+    font-size: 100px;
+    padding-top: 180px;
   }
   h2 {
     font-size: 45px;
