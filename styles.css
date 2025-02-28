@@ -208,6 +208,33 @@ button.english {
   margin: 40px auto 20px auto;
 }
 
+/* Portfolio Section Styles */
+.portfolio {
+  background-color: var(--text-color-light);
+  background-image: url(./images/backgrounds/45-degree-fabric-dark.png);
+}
+.portfolio-heading {
+  color: var(--feature-color-dark);
+  padding-top: 80px;
+}
+.portfolio-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 50px auto;
+}
+.website-screenshot {
+  border: 7px solid var(--feature-color-dark);
+  border-radius: 20px;
+  margin-top: 30px;
+  max-width: 300px;
+  opacity: 0.6;
+}
+.website-screenshot:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
 /* Services Section Styles */
 
 .services {
@@ -388,5 +415,8 @@ footer {
 
   .offer-small {
     margin: 0 20px;
+  }
+  .website-screenshot {
+    max-width: 600px;
   }
 }
